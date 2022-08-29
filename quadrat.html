@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+
+			
+			function clicked() {
+			let hoch = document.getElementById("idhoch").value;
+			
+
+			let i = 1;
+
+			let ausgabe = "";
+
+		
+
+			while (i<=hoch) {
+
+			 let quadrat = i*i*i;
+
+			 ausgabe = ausgabe + "<br>" + "Die Zahl: " + i  + " hoch 3" + "ist:" + quadrat;
+
+			i++
+		}
+			
+			document.getElementById("idausgabe").innerHTML = ausgabe;
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<h1>Berechnung</h1>
+		Zahl eingabe: <input id="idhoch" type="text" value="">
+		<button onClick="clicked();">Wertetabelle erzeugen!</button><br /><br />
+		<div id="idausgabe"></div>
+	</body>
+</html>
